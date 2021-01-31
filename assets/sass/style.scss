@@ -1,0 +1,44 @@
+%all{
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: darkred;
+    border-radius: 10px;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: #000;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#digitalClock{
+    width: 50%;
+    height: auto;
+    margin: 200px auto;
+
+    #hour{
+        @extend %all;
+        margin-left: 150px;
+        margin-right: 10px;
+    }
+    #minute{
+        @extend %all;
+        margin-right: 10px;
+    }
+    #second{
+        @extend %all;
+    }
+}
